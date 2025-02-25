@@ -2,32 +2,41 @@ var siteTheme = gbifReactComponents.themeBuilder.extend({baseTheme: 'light', ext
   primary: themeStyle.colors.primary
 }});
 
-var siteTheme = gbifReactComponents.themeBuilder.extend({baseTheme: 'light', extendWith: {
-  primary: themeStyle.colors.primary,
-  fontSize: '16px'
-}});
+const publisherKey = '750a8724-fa66-4c27-b645-bd58ac5ee010';
 
 var siteConfig = {
   routes: {
-    occurrenceSearch: {
-      // The route you are currently using for occurrence search. The language prefix will be added automatically
-      // If you need special routes per language, then you have to add locale specific overwrites. The page language is available as a global variable called `pageLang`
-      // route: '/data'
-    }
+    alwaysUseHrefs: false,
+    enabledRoutes: ['occurrenceSearch', 'datasetSearch', 'datasetKey', 'literatureSearch'],
+  },
+  dataset: {
+    rootFilter: {
+      publishingOrg: publisherKey
+    },
+    excludedFilters: ['anyPublisherKey', 'datasetType', 'hostingOrganizationKey', 'networkKey', 'publishingCountryCode', 'license'],
+    highlightedFilters: ['q']
   },
   occurrence: {
+    excludedFilters: ['publisherKey', 'publishingCountryCode'],
+    highlightedFilters: ['taxonKey', 'country', 'year', 'datasetKey'],
     mapSettings: {
-      lat: 60,
-      lng: -100,
-      zoom: 4.9115440763665068
+      lat: 0,
+      lng: 0,
+      zoom: 1
     },
+    // all the columns that are available to the user. This array defines the order they appear in. By default all all column are available.
+    availableTableColumns: ['features', 'country', 'stateProvince', 'locality', 'coordinates', 'year', 'eventDate', 'basisOfRecord', 'recordedBy', 'identifiedBy', 'recordNumber', 'catalogNumber', 'collectionCode', 'institutionCode', 'dataset'],
+    defaultTableColumns: ['features', 'country', 'coordinates', 'year', 'catalogNumber', 'dataset'], // the columns showed by default. The order is not relevant, as it is defined in the list of available columns. The user can change what columns to show in the UI.
     // You probably need help to configure the scope - so just ask
     // for his demo site we only show Fungi (taxonKey=5). It use the predicate structure known from GBIF download API. 
     // See https://www.gbif.org/developer/occurrence (long page without enough anchors - search for "Occurrence Download Predicates")
     // The format is however slightly different, in that is use camelCase for keys instead of CONSTANT_CASE. 
-    rootPredicate: { type: 'equals', key: 'taxonKey', value: 5 }, 
-    // occurrenceSearchTabs: ['MAP', 'TABLE', 'GALLERY', 'DATASETS'] // what tabs should be shown
+    rootPredicate: { type: 'equals', key: 'publishingOrg', value: publisherKey }, 
+    occurrenceSearchTabs: ['MAP', 'TABLE', 'DATASETS', 'CLUSTERS'] // what tabs should be shown
     // see https://hp-theme.gbif-staging.org/data-exploration-config for more options
+  },
+  literature: {
+    rootFilter: {publishingOrganizationKey: [publisherKey]}
   }
 };
 

@@ -15,7 +15,7 @@ composition:
 - type: features # The block type "features" shows a list of cards
   data: examples.couldBeAnyName # We also need some data for those cards. In this case we refer to a yaml file in the _data folder.
 - type: split
-  data: examples.someOtherNameForSomeData
+  data: examples.herbariumImageExample
 - type: media # another block type, but this time defining the data inline, instead of in a separate file
   inlineData: 
     title: Great papers you should read
