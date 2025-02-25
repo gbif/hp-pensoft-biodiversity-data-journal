@@ -1,8 +1,8 @@
 ---
 lang-ref: home
 layout: home
-title: Template headline
-description: Lesser saw seas own have can’t kind Also to every own yielding there stars one itself lights seed yielding dominion lesser from lesser were divide be their spirit one behold a they’re grass called open.
+title: Biodiversity Data Journal
+description: Browse data on GBIF associated with publications in BDJ
 background:  "{{ site.data.images.acalypha_gillespieae.src }}"
 imageLicense: "{{ site.data.images.acalypha_gillespieae.caption }}"
 height: 90vh
@@ -13,15 +13,15 @@ cta:
   - text: Occurrences
     href: /occurrence/search
   - text: Literature
-    href: /literature/search
-  - text: About
-    href: /about
+    href: /literature/search  
 composition:
   - type: heroImage # the block type
-  - type: features
-    data: examples.couldBeAnyName
-  - type: split
-    data: examples.herbariumImageExample
+  - type: stats
+    data: home.stats
+# - type: features
+#   data: examples.couldBeAnyName
+# - type: split
+#   data: examples.herbariumImageExample
 permalink: /
 ---
 
