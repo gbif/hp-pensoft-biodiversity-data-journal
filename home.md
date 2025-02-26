@@ -12,7 +12,7 @@ cta:
     isPrimary: true
   - text: Occurrences
     href: /occurrence/search
-  - text: Literature
+  - text: Citations
     href: /literature/search  
 composition:
   - type: heroImage # the block type
