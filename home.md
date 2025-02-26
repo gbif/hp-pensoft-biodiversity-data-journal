@@ -1,7 +1,8 @@
 ---
 lang-ref: home
 layout: home
-title: Biodiversity Data Journal Hosted Portal
+preTitle: Hosted Portal
+title: Biodiversity Data Journal
 description: Browse data on GBIF associated with publications in Biodiversity Data Journal
 background:  "{{ site.data.images.acalypha_gillespieae.src }}"
 imageLicense: "{{ site.data.images.acalypha_gillespieae.caption }}"
