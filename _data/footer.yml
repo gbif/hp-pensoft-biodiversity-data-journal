@@ -18,7 +18,8 @@ columns:
     description: | # Can be Markdown
       **Editorial office**
       * Prof. Georgi Zlatarski Street 12
-      * 1700 Sofia, Bulgaria
+      * 1700 Sofia 
+      * Bulgaria
     connectIcons: true
 
   # EXAMPLE
