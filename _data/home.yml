@@ -2,13 +2,13 @@ stats:
   features:
     - title: <span data-ajax-url="https://api.gbif.org/v1/occurrence/search?publishing_org=750a8724-fa66-4c27-b645-bd58ac5ee010&limit=0">9,000,000</span>
       description: Occurrences
-      background: /assets/images/icons/occurrences.png
+      background: /assets/images/icons/occurrences.svg
       href: https://www.gbif.org/occurrence/search?publishing_org=750a8724-fa66-4c27-b645-bd58ac5ee010&advanced=1 "target='_blank'"
     - title: <span data-ajax-url="https://api.gbif.org/v1/dataset/search?publishing_org=750a8724-fa66-4c27-b645-bd58ac5ee010&limit=0">100,000</span>
       description: Datasets
-      background: /assets/images/icons/datasets.png
+      background: /assets/images/icons/datasets.svg
       href: https://www.gbif.org/dataset/search?publishing_org=750a8724-fa66-4c27-b645-bd58ac5ee010&advanced=1 "target='_blank'"
     - title: <span data-ajax-url="https://api.gbif.org/v1/literature/search?publishingOrganizationKey=750a8724-fa66-4c27-b645-bd58ac5ee010&limit=0">100,000</span>
       description: Citations
-      background: /assets/images/icons/citations.png
+      background: /assets/images/icons/citations.svg
       href: https://www.gbif.org/resource/search?contentType=literature&publishingOrganizationKey=750a8724-fa66-4c27-b645-bd58ac5ee010 "target='_blank'"
