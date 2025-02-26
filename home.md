@@ -5,7 +5,7 @@ preTitle: Hosted Portal
 title: Biodiversity Data Journal
 description: Browse data on GBIF associated with publications in Biodiversity Data Journal
 background: /assets/images/placeholders/bdj-hp-cover.jpg
-imageLicense: aa
+imageLicense: Potter ME, Bremer JS, Moore MR, Talamas EJ, Shrewsbury PM: _Telenomus cristatus_ Johnson, https://doi.org/10.3897/BDJ.11.e111347
 height: 75vh
 cta:
   - text: Datasets
