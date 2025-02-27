@@ -8,7 +8,7 @@ imageLicense: |
 height: 70vh
 ---
 
-This is GBIF Hosted Portal, displaying data extracted or associated with articles published in [Biodiversity Data Journal](https://bdj.pensoft.net/).
+This is а GBIF Hosted Portal, displaying data extracted or associated with articles published in [Biodiversity Data Journal](https://bdj.pensoft.net/).
 
 **Biodiversity Data Journal (BDJ)** is a community peer-reviewed, open access, comprehensive online platform, designed to accelerate publishing, dissemination and sharing of biodiversity-related data of any kind. All structural elements of the articles – text, morphological descriptions, occurrences, data tables etc. – will be treated and stored as data, in accordance with the Data [Publishing Policies and Guidelines of Pensoft Publishers](https://doi.org/10.3897/rio.3.e12431).
 
