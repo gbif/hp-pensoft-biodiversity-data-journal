@@ -23,7 +23,7 @@ title: Biodiversity Data Journal Hosted Portal
 email: bdj@pensoft.net
 description: Biodiversity Data Journal Hosted Portal
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://biodiversity-data-journal.hp.gbif.org/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://data.bdj.pensoft.net/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: BioDataJournal # if you have an account you want to link to. Else comment this line out
 bluesky_username: bdj.pensoft.net
 facebook_username: BioDataJournal
