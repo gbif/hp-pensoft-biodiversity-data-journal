@@ -41,8 +41,7 @@ var siteConfig = {
        peerReview: true
      }
   },
-  //rootFilter: {publishingOrganizationKey: [publisherKey]}
-  }
+  //rootFilter: {publishingOrganizationKey: [publisherKey]}  
 };
 
 // example of a language specific route overwrite
