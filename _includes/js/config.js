@@ -36,7 +36,12 @@ var siteConfig = {
     // see https://hp-theme.gbif-staging.org/data-exploration-config for more options
   },
   literature: {
-    rootFilter: {publishingOrganizationKey: [publisherKey]}
+     rootFilter: {
+       publishingOrganizationKey: [publisherKey],
+       peerReview: true
+     }
+  },
+  //rootFilter: {publishingOrganizationKey: [publisherKey]}
   }
 };
 
