@@ -1,6 +1,8 @@
-var siteTheme = gbifReactComponents.themeBuilder.extend({baseTheme: 'light', extendWith: {
-  primary: themeStyle.colors.primary
-}});
+var siteTheme = gbifReactComponents.themeBuilder.extend({
+  baseTheme: 'light', extendWith: {
+    primary: themeStyle.colors.primary
+  }
+});
 
 const publisherKey = '750a8724-fa66-4c27-b645-bd58ac5ee010';
 
@@ -31,20 +33,31 @@ var siteConfig = {
     // for his demo site we only show Fungi (taxonKey=5). It use the predicate structure known from GBIF download API. 
     // See https://www.gbif.org/developer/occurrence (long page without enough anchors - search for "Occurrence Download Predicates")
     // The format is however slightly different, in that is use camelCase for keys instead of CONSTANT_CASE. 
-    rootPredicate: { type: 'equals', key: 'publishingOrg', value: publisherKey }, 
+    rootPredicate: { type: 'equals', key: 'publishingOrg', value: publisherKey },
     occurrenceSearchTabs: ['TABLE', 'GALLERY', 'MAP', 'DATASETS', 'CLUSTERS', 'DASHBOARD'] // what tabs should be shown
     // see https://hp-theme.gbif-staging.org/data-exploration-config for more options
   },
   literature: {
-     rootFilter: {
-       publishingOrganizationKey: [publisherKey],
-       peerReview: true
-     }
-  },
-  //rootFilter: {publishingOrganizationKey: [publisherKey]}  
-};
-
-// example of a language specific route overwrite
-// if (pageLang === 'da')  {
-//   siteConfig.routes.occurrenceSearch.route = '/observationer/sog';
-// }
+    rootFilter: {
+      predicate: {
+        type: 'and', predicates: [
+          {
+            type: 'in',
+            key: 'publishingOrganizationKey',
+            values: [publisherKey]
+          },
+          {
+            type: 'equals',
+            key: 'relevance',
+            value: 'GBIF_USED'
+          },
+          {
+            type: 'equals',
+            key: 'peerReview',
+            value: 'true'
+          }
+        ]
+      }
+    }
+  }
+}
