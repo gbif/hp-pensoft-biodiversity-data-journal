@@ -34,7 +34,7 @@ var siteConfig = {
     // See https://www.gbif.org/developer/occurrence (long page without enough anchors - search for "Occurrence Download Predicates")
     // The format is however slightly different, in that is use camelCase for keys instead of CONSTANT_CASE. 
     rootPredicate: { type: 'equals', key: 'publishingOrg', value: publisherKey },
-    occurrenceSearchTabs: ['TABLE', 'GALLERY', 'MAP', 'DATASETS', 'CLUSTERS', 'DASHBOARD'] // what tabs should be shown
+    occurrenceSearchTabs: ['MAP', 'GALLERY', 'TABLE', 'DATASETS', 'CLUSTERS', 'DASHBOARD'] // what tabs should be shown
     // see https://hp-theme.gbif-staging.org/data-exploration-config for more options
   },
   literature: {
