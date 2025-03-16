@@ -12,7 +12,7 @@ columns:
 
   - name: Code
     description: | # Can be Markdown
-      This project is open source. See the code on [Github](https://github.com/gbif/hp-biodiversity-data-journal).
+      This project is open source. See the code on [GitHub](https://github.com/gbif/hp-biodiversity-data-journal).
   
   - name: Contact
     description: | # Can be Markdown
